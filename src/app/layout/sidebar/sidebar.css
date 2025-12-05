@@ -1,0 +1,136 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 250px;
+  height: calc(100vh - 60px);
+  background-color: #2b3945;
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 999;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+  display: block;
+  visibility: visible;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #1e2832;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  visibility: visible;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-right: 12px;
+  color: white;
+}
+
+.brand-text {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.sidebar-nav {
+  padding: 10px 0;
+  display: block;
+  visibility: visible;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  visibility: visible;
+}
+
+.nav-item {
+  margin: 0;
+  padding: 0 10px;
+  display: block;
+  visibility: visible;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  color: #b8c5d1;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+}
+
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 70%;
+  background-color: #ffffff;
+  border-radius: 0 3px 3px 0;
+}
+
+.nav-icon {
+  margin-right: 12px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  font-size: 20px;
+}
+
+.nav-label {
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #1e2832;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #5a6578;
+}

@@ -1,0 +1,36 @@
+.main-layout {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.main-content {
+  margin-top: 60px;
+  padding: 0;
+  padding-left: 0;
+  min-height: calc(100vh - 60px);
+  background-color: #f5f7fa;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 30px;
+}
+
+.main-content .content-wrapper {
+  padding-left: 0 !important;
+}
+
+.main-content .content-header {
+  padding-left: 0 !important;
+}
+
+.main-content .content {
+  padding-left: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+}
